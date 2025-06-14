@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка артистов | Sequoia Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Фоновое изображение -->
+    <div class="hero-bg"></div>
+
+    <!-- Шапка -->
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/40x40/2e8b57/ffffff?text=SM" alt="Sequoia Music" class="logo-img">
+            <span>SEQUOIA MUSIC</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="#">Артисты</a>
+            <a href="#">Музыка</a>
+            <a href="#">Плейлисты</a>
+            <a href="#">О нас</a>
+
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+
+        <div class="user-actions">
+            <button class="btn btn-outline active">Поддержать</button>
+            <button class="btn btn-primary">Войти</button>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <div class="main-content">
+        <!-- Боковое меню -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title"><i class="fas fa-heart"></i> Поддержка</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="active">Все артисты</a></li>
+                    <li><a href="#">Топ донатеров</a></li>
+                    <li><a href="#">Недавно поддержаны</a></li>
+                    <li><a href="#">Мои донаты</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title"><i class="fas fa-filter"></i> Фильтры</h3>
+                <div class="filter-group">
+                    <label>Жанр:</label>
+                    <select class="filter-select">
+                        <option value="all">Все жанры</option>
+                        <option value="rock">Рок</option>
+                        <option value="pop">Поп</option>
+                        <option value="hiphop">Хип-хоп</option>
+                        <option value="electronic">Электроника</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Сортировка:</label>
+                    <select class="filter-select">
+                        <option value="popular">По популярности</option>
+                        <option value="recent">По новизне</option>
+                        <option value="donations">По сумме донатов</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title"><i class="fas fa-trophy"></i> Топ месяца</h3>
+                <ol class="top-list">
+                    <li>
+                        <span>Sequoia Band</span>
+                        <span class="donation-amount">₽42,500</span>
+                    </li>
+                    <li>
+                        <span>Urban Flow</span>
+                        <span class="donation-amount">₽38,200</span>
+                    </li>
+                    <li>
+                        <span>Marina Dreams</span>
+                        <span class="donation-amount">₽29,700</span>
+                    </li>
+                </ol>
+            </div>
+        </aside>
+
+        <!-- Страница донатов -->
+        <main class="donate-page">
+            <section class="hero-section">
+                <h1 class="main-title">ПОДДЕРЖИТЕ <span>АРТИСТОВ</span></h1>
+                <p class="main-subtitle">Ваша финансовая поддержка помогает музыкантам создавать новую музыку и развивать свое творчество.</p>
+            </section>
+
+            <!-- Статистика платформы -->
+            <div class="platform-stats">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <span class="stat-number">24,589</span>
+                        <span class="stat-label">Донатеров</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-ruble-sign"></i>
+                    <div>
+                        <span class="stat-number">₽8,942,100</span>
+                        <span class="stat-label">Собрано всего</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-music"></i>
+                    <div>
+                        <span class="stat-number">1,247</span>
+                        <span class="stat-label">Поддержанных артистов</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Секция с артистами -->
+            <section class="artists-section">
+                <div class="section-header">
+                    <h2 class="section-title">Артисты, <span>которых можно поддержать</span></h2>
+                    <div class="search-box">
+                        <input type="text" placeholder="Поиск артистов...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <!-- Список артистов -->
+                <div class="artists-grid">
+                    <!-- Артист 1 -->
+                    <div class="artist-card">
+                          <div class="artist-cover" style="background-image: url('./img/orig.webp')"></div>
+                        <div class="artist-cover" style="background-image: url('https://via.placeholder.com/400x400/2e8b57/ffffff?text=SB')">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <audio src="https://example.com/track1.mp3" class="audio-player"></audio>
+                        </div>
+                        <div class="artist-info">
+                            
+                            <h3 class="artist-name">Sequoia Band</h3>
+                            <p class="artist-genre">Фолк-рок</p>
+                            <div class="artist-stats">
+                                <div class="stat">
+                                    <i class="fas fa-headphones"></i>
+                                    <span>124K слушателей</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-donate"></i>
+                                    <span>542 доната</span>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 65%">
+                                    <span class="progress-text">₽42,500 из ₽65,000</span>
+                                </div>
+                            </div>
+                            <div class="donate-actions">
+                                <button class="btn btn-small btn-outline listen-btn">
+                                    <i class="fas fa-play"></i> Слушать
+                                </button>
+                                <div class="donate-input-group">
+                                    <input type="number" placeholder="Сумма" min="100" value="500">
+                                    <span class="currency">₽</span>
+                                    <button class="btn btn-small btn-primary donate-btn">Донат</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Артист 2 -->
+                    <div class="artist-card">
+                         <div class="artist-cover" style="background-image: url('./img/orig\ \(1\).webp')"></div>
+                        <div class="artist-cover" style="background-image: url('https://via.placeholder.com/400x400/2e8b57/ffffff?text=UF')">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <audio src="https://example.com/track2.mp3" class="audio-player"></audio>
+                        </div>
+                        <div class="artist-info">
+                             
+                            <h3 class="artist-name">Urban Flow</h3>
+                            <p class="artist-genre">Электронная музыка</p>
+                            <div class="artist-stats">
+                                <div class="stat">
+                                    <i class="fas fa-headphones"></i>
+                                    <span>87K слушателей</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-donate"></i>
+                                    <span>387 донатов</span>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 45%">
+                                    <span class="progress-text">₽38,200 из ₽85,000</span>
+                                </div>
+                            </div>
+                            <div class="donate-actions">
+                                <button class="btn btn-small btn-outline listen-btn">
+                                    <i class="fas fa-play"></i> Слушать
+                                </button>
+                                <div class="donate-input-group">
+                                    <input type="number" placeholder="Сумма" min="100" value="500">
+                                    <span class="currency">₽</span>
+                                    <button class="btn btn-small btn-primary donate-btn">Донат</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Артист 3 -->
+                    <div class="artist-card">
+                         <div class="artist-cover" style="background-image: url('./img/orig\ \(2\).webp')"></div>
+                        <div class="artist-cover" style="background-image: url('https://via.placeholder.com/400x400/2e8b57/ffffff?text=MD')">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <audio src="https://example.com/track3.mp3" class="audio-player"></audio>
+                        </div>
+                        <div class="artist-info">
+                             
+                            <h3 class="artist-name">Marina Dreams</h3>
+                            <p class="artist-genre">Авторская песня</p>
+                            <div class="artist-stats">
+                                <div class="stat">
+                                    <i class="fas fa-headphones"></i>
+                                    <span>152K слушателей</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-donate"></i>
+                                    <span>621 донат</span>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 33%">
+                                    <span class="progress-text">₽29,700 из ₽90,000</span>
+                                </div>
+                            </div>
+                            <div class="donate-actions">
+                                <button class="btn btn-small btn-outline listen-btn">
+                                    <i class="fas fa-play"></i> Слушать
+                                </button>
+                                <div class="donate-input-group">
+                                    <input type="number" placeholder="Сумма" min="100" value="500">
+                                    <span class="currency">₽</span>
+                                    <button class="btn btn-small btn-primary donate-btn">Донат</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Артист 4 -->
+                    <div class="artist-card">
+                         <div class="artist-cover" style="background-image: url('./img/orig\ \(3\).webp')"></div>
+                        <div class="artist-cover" style="background-image: url('https://via.placeholder.com/400x400/2e8b57/ffffff?text=ES')">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <audio src="https://example.com/track4.mp3" class="audio-player"></audio>
+                        </div>
+                        <div class="artist-info">
+                             
+                            <h3 class="artist-name">Eco Sound</h3>
+                            <p class="artist-genre">Экспериментальная</p>
+                            <div class="artist-stats">
+                                <div class="stat">
+                                    <i class="fas fa-headphones"></i>
+                                    <span>54K слушателей</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-donate"></i>
+                                    <span>215 донатов</span>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 28%">
+                                    <span class="progress-text">₽14,300 из ₽50,000</span>
+                                </div>
+                            </div>
+                            <div class="donate-actions">
+                                <button class="btn btn-small btn-outline listen-btn">
+                                    <i class="fas fa-play"></i> Слушать
+                                </button>
+                                <div class="donate-input-group">
+                                    <input type="number" placeholder="Сумма" min="100" value="500">
+                                    <span class="currency">₽</span>
+                                    <button class="btn btn-small btn-primary donate-btn">Донат</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция как это работает -->
+            <section class="how-it-works">
+                <h2 class="section-title">Как <span>поддержать артиста</span></h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Выберите артиста</h3>
+                        <p>Найдите музыканта, творчество которого вам нравится</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Послушайте треки</h3>
+                        <p>Оцените музыку прямо на платформе</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Укажите сумму</h3>
+                        <p>Любая сумма от 100 рублей</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Поддержите</h3>
+                        <p>Ваши деньги пойдут напрямую артисту</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sequoia Music</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Реклама</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Музыкантам</h3>
+                <ul>
+                    <li><a href="#">Как начать</a></li>
+                    <li><a href="#">Продвижение</a></li>
+                    <li><a href="#">Монетизация</a></li>
+                    <li><a href="donate.html">Донаты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Слушателям</h3>
+                <ul>
+                    <li><a href="#">Подписки</a></li>
+                    <li><a href="#">Плейлисты</a></li>
+                    <li><a href="#">Чарты</a></li>
+                    <li><a href="#">Жанры</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Социальные сети</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-vk"></i> ВКонтакте</a></li>
+                    <li><a href="#"><i class="fab fa-telegram"></i> Telegram</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">© 2023 Sequoia Music. Все права защищены.</p>
+    </footer>
+
+    <!-- Уведомление о cookies -->
+    <div class="cookies-notice">
+        <p>Мы используем файлы cookies для улучшения работы сайта</p>
+        <button class="cookies-btn">Понятно</button>
+    </div>
+
+    <!-- Модальное окно доната -->
+    <div class="modal" id="donateModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Поддержать <span id="artistNameModal"></span></h3>
+                <button class="close-btn" id="closeDonateModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="donate-options">
+                    <div class="donate-option" data-amount="100">
+                        <span>100 ₽</span>
+                        <small>Минимальная поддержка</small>
+                    </div>
+                    <div class="donate-option" data-amount="500">
+                        <span>500 ₽</span>
+                        <small>Стандартная сумма</small>
+                    </div>
+                    <div class="donate-option" data-amount="1000">
+                        <span>1000 ₽</span>
+                        <small>Значительный вклад</small>
+                    </div>
+                    <div class="donate-option" data-amount="5000">
+                        <span>5000 ₽</span>
+                        <small>Премиум поддержка</small>
+                    </div>
+                </div>
+                <div class="custom-amount">
+                    <label>Или укажите свою сумму:</label>
+                    <div class="input-group">
+                        <input type="number" id="customAmount" min="100" value="500">
+                        <span>₽</span>
+                    </div>
+                </div>
+                <div class="payment-methods">
+                    <h4>Способ оплаты:</h4>
+                    <div class="methods-grid">
+                        <div class="method-card active">
+                            <i class="fab fa-cc-visa"></i>
+                            <span>Карта</span>
+                        </div>
+                        <div class="method-card">
+                            <i class="fab fa-qiwi"></i>
+                            <span>QIWI</span>
+                        </div>
+                        <div class="method-card">
+                            <i class="fab fa-yandex"></i>
+                            <span>ЮMoney</span>
+                        </div>
+                        <div class="method-card">
+                            <i class="fab fa-bitcoin"></i>
+                            <span>Crypto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="cancelDonate">Отмена</button>
+                <button class="btn btn-primary" id="confirmDonate">Поддержать</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+/* Стили для страницы донатов */
+.donate-page {
+    padding: 2rem;
+    position: relative;
+}
+
+.platform-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.stat-card {
+    background-color: rgba(26, 26, 46, 0.8);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    border: 1px solid rgba(46, 139, 87, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--sequoia-green);
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.artist-card {
+    background-color: rgba(26, 26, 46, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(46, 139, 87, 0.2);
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--sequoia-green);
+}
+
+.artist-cover {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.artist-info {
+    padding: 1.2rem;
+}
+
+.artist-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.artist-genre {
+    color: var(--sequoia-green);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.artist-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.artist-stats i {
+    margin-right: 0.3rem;
+}
+
+.progress-container {
+    background-color: rgba(46, 139, 87, 0.1);
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: var(--sequoia-green);
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    right: 5px;
+    top: -20px;
+    font-size: 0.7rem;
+    color: var(--text-light);
+}
+
+.donate-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+.donate-input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.donate-input-group input {
+    width: 70px;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--sequoia-green);
+    border-radius: 5px;
+    color: var(--text-light);
+}
+
+.currency {
+    position: absolute;
+    right: 40px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.search-box {
+    position: relative;
+    width: 250px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--sequoia-green);
+    border-radius: 20px;
+    color: var(--text-light);
+}
+
+.search-box i {
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+}
+
+.how-it-works {
+    margin-top: 3rem;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.step-card {
+    background-color: rgba(26, 26, 46, 0.8);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(46, 139, 87, 0.3);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--sequoia-green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+}
+
+.step-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.step-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Модальное окно доната */
+#donateModal .modal-content {
+    max-width: 500px;
+}
+
+.donate-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.donate-option {
+    background-color: var(--card-bg);
+    border: 1px solid var(--sequoia-green);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.donate-option:hover {
+    background-color: rgba(46, 139, 87, 0.1);
+}
+
+.donate-option.active {
+    background-color: rgba(46, 139, 87, 0.2);
+    border-color: var(--neon-green);
+}
+
+.donate-option span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.donate-option small {
+    color: var(--text-muted);
+    font-size: 0.7rem;
+}
+
+.custom-amount {
+    margin-bottom: 1.5rem;
+}
+
+.custom-amount label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--sequoia-green);
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--sequoia-green);
+    border-radius: 5px;
+    color: var(--text-light);
+}
+
+.input-group span {
+    position: absolute;
+    right: 1rem;
+    color: var(--text-muted);
+}
+
+.payment-methods {
+    margin-bottom: 1.5rem;
+}
+
+.payment-methods h4 {
+    margin-bottom: 0.5rem;
+    color: var(--sequoia-green);
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+}
+
+.method-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--sequoia-green);
+    border-radius: 5px;
+    padding: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.method-card:hover {
+    background-color: rgba(46, 139, 87, 0.1);
+}
+
+.method-card.active {
+    background-color: rgba(46, 139, 87, 0.2);
+    border-color: var(--neon-green);
+}
+
+.method-card i {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.method-card span {
+    font-size: 0.8rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(46, 139, 87, 0.2);
+}
+
+.filter-group {
+    margin-bottom: 1rem;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--sequoia-green);
+    border-radius: 5px;
+    color: var(--text-light);
+    margin-top: 0.3rem;
+}
+
+.top-list {
+    list-style: none;
+    counter-reset: top-counter;
+}
+
+.top-list li {
+    counter-increment: top-counter;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed rgba(46, 139, 87, 0.3);
+}
+
+.top-list li::before {
+    content: counter(top-counter) ".";
+    margin-right: 0.5rem;
+    color: var(--sequoia-green);
+}
+
+.donation-amount {
+    color: var(--sequoia-green);
+    font-weight: bold;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .platform-stats {
+        flex-direction: column;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .donate-options {
+        grid-template-columns: 1fr;
+    }
+}
